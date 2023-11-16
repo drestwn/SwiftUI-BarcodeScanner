@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct SwiftUI_BarcodeScannerApp: App {
+    @State private var alertItem: AlertItem? = nil
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BarcodeScannerView()
         }
     }
 }
